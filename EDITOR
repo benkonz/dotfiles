@@ -1,2 +1,0 @@
-#!/bin/fish
-/usr/bin/emacsclient -t $argv
