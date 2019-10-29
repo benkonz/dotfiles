@@ -6,7 +6,7 @@
       company-minimum-prefix-length 3)
 ;; ocaml configs
 (add-to-list 'auto-mode-alist '("\\.mll\\'" . tuareg-mode))
-(add-hook 'tuareg-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'tuareg-mode-hook #'rainbow-delimiters-mode)
 (map! :localleader
       :map tuareg-mode-map
       "j" #'merlin-jump
