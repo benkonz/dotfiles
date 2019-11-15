@@ -19,3 +19,11 @@ source /Users/konz/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
 function amm --description 'Scala REPL'
     sh -c 'amm "$@"' amm $argv
 end
+
+function git-root --description 'cd to git root'
+  cd (git rev-parse --show-cdup)
+end
+
+function cloc-git --description 'CLOC the files not ignored by git'
+  cloc (git ls-files)
+end
