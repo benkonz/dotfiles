@@ -1,6 +1,9 @@
 ;;; ~/.doom.d/config.el -*- lexical-binding: t; -*-
 (setq doom-font (font-spec :family "Source Code Pro" :size 12))
 
+;; color theme
+(setq doom-theme 'doom-molokai)
+
 ;; enable company autocompletion
 (setq company-idle-delay 0.2
       company-minimum-prefix-length 3)
