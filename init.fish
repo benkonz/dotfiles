@@ -27,3 +27,7 @@ end
 function cloc-git --description 'CLOC the files not ignored by git'
   cloc (git ls-files)
 end
+
+function fish_greeting
+end
+
